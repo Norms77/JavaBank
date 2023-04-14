@@ -28,11 +28,21 @@ public class ATM {
 	    	
 	    	
 	    	//(MINUTO 56:00)
-	    	
-	    	
 	    }
-	    
-
 	}
-
-}
+public static User mainMenuPrompt(bank theBank, Scanner sc) {
+	String userID;
+	String pin;
+	User authUser;
+	
+	//prompt the user for user ID/pin combo until a correct is reached
+	do{
+	System.out.printf("\n\nWelcome to %s\n\n", theBank.getName()); 
+        System.out.print("Enter user ID: ");
+	userID = nextLine():
+		System.out.print("Enter pin");
+		pin = sc.nextLine();
+	}while();
+	//Try to get the user object corresponding to the ID and pin combo
+	authUser = 
+	}
