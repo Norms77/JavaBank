@@ -52,5 +52,41 @@ public class User {
 		}
 		return false;
 	}
-
+    /**
+     * return the user's first name.
+     * @return the first name 
+     */
+public String getFirstName(){
+    this.firstName
 }
+public void printAccountsSummary(){
+
+    System.out.printf("\n\n%s's accounts summary", this.firstName);
+    for (int a = 0; a < this.accounts.size(); a++) {
+        System.out.printf("%d) $s\n", a+1, 
+        this.account.get(a).getSummaryLine());
+    }
+    System.out.println();
+    }
+    /**
+     * Get the number of accounts of the user 
+     * @return this.accounts.size();
+     * 
+     */
+    public int numAccounts() {
+        return this.accounts.size();
+
+    }
+    public void printAcctTransHistory(int acctIdx){
+        this.accounts.get(acctIdx).printTransHistory();
+    }
+    /**
+     * get the balance of  a particular account 
+     * @param acctIdx   the index of the account to use 
+     * @return          the balance of the account
+     */
+    public double getAcctBalance(int acctIdx) {
+        return this.accounts.get(acctIdx).getBalance();
+    }
+}
+
